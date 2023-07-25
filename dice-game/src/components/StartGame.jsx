@@ -31,6 +31,13 @@ height: 100vh;
  img{
   width: 389px;
 height: 342px;
+filter: grayscale(.20);
+transition: .6s;
+cursor: pointer;
+&:hover{
+filter: grayscale(0);
+transform: scale(1.3) rotate(7deg);
+}
  }
 .content {
    h1{
