@@ -16,11 +16,11 @@ max-width: 200px;
 text-align: center;
 /* background-color: aliceblue; */
 h1{
-    font-size: 100px;
+    font-size: 70px;
     line-height: 100px;
 }
 p{
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
 }
 `

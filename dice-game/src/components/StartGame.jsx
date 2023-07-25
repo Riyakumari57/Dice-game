@@ -47,9 +47,6 @@ color: black;
 min-width: 220px;
 border: none;
 font-size: 25px;
-/* font-style: normal;
-font-weight: 600;
-line-height: normal; */
 transition: 0.3s;
 cursor: pointer;
 overflow: hidden;

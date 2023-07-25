@@ -25,16 +25,21 @@ function RollDice({
 export default RollDice;
 
 const DiceContainer = styled.div`
-  margin-top: 48px;
+  margin-top: 38px;
   display: flex;
   flex-direction: column;
   align-items: center;
   
 .dice{
   cursor: pointer;
+  
 }
-
+ 
+img{
+  width: 200px;
+}
   p {
-    font-size: 24px;
+    font-size: 20px;
+    font-weight: 600;
   }
 `;
