@@ -1,20 +1,20 @@
-import styled  from "styled-components"
+import styled from "styled-components"
 
-function StartGame({toggle}) {
+function StartGame({ toggle }) {
   return (
     <>
-    <Container>
-      <div>
-      <img src="/images/dices.png" alt="" />
-      </div>
-     
-      <div className="content">
-        <h1>DICE GAME</h1>
-        <Button 
-        onClick={toggle}
-        ><span></span>Play Now </Button>
-      </div>
-    </Container>
+      <Container>
+        <div>
+          <img src="/images/dices.png" alt="" />
+        </div>
+
+        <div className="content">
+          <h1>DICE GAME</h1>
+          <Button
+            onClick={toggle}
+          ><span></span>Play Now </Button>
+        </div>
+      </Container>
     </>
   )
 }
@@ -28,10 +28,13 @@ justify-content: center;
 align-items: center;
 margin: auto;
 height: 100vh;
-
+ img{
+  width: 389px;
+height: 342px;
+ }
 .content {
    h1{
-    font-size: 96px;
+    font-size: 76px;
     white-space: nowrap;
    }
 }
@@ -61,11 +64,6 @@ span{
   bottom: 0;
   transition: all 0.5s ease;
   z-index: -1;
-  /* transform: translateX(0); */
-
-  /* &:hover{
-    transform: translateX(100)
-  } */
 }
 
 &:hover{
