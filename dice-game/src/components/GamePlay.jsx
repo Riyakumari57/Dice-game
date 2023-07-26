@@ -10,10 +10,9 @@ function GamePlay() {
   const [selectNum, setSelectNum] = useState();
   const [currentDice, setCurrentDice] = useState(1);
   const [error, setError] = useState("");
-  const [showRules , setShowRules] = useState(false)
-
+  const [showRules , setShowRules] = useState(false);
+    
   const generateRandomNumber = (min, max) => {
-    // console.log(Math.floor(Math.random()  * (max - min) + min));
     return Math.floor(Math.random() * (max - min) + min);
   };
 
@@ -32,7 +31,7 @@ function GamePlay() {
     if (selectNum === RandomNum) {
       setScore((prev) => prev + RandomNum);
     } else {
-      setScore((prev) => prev - 2);
+      setScore((prev) => prev);
     }
     setSelectNum(undefined);
   };
@@ -59,6 +58,9 @@ function GamePlay() {
           Rules</ButtonRules>
         </div>
        {showRules ? <Rules /> : ""} 
+       
+        
+
       </MainContainer>
     </>
   );

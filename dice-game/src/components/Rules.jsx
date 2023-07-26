@@ -12,7 +12,7 @@ function Rules() {
           after click on dice if selected number is equal to dice number you
           will get same point as dice{" "}
         </p>
-        <p>if you get wrong guess then 2 point will be dedcuted </p>
+        <p>if you get wrong guess then no points will be added  </p>
         </div>
         
       </RulesContainer>
@@ -29,6 +29,7 @@ const RulesContainer = styled.div`
   max-width: 730px;
   margin: 0 auto;
   margin-top: 25px;
+  margin-bottom: 25px;
   border-radius: 10px;
 
   h2{

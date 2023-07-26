@@ -69,6 +69,13 @@ display: grid;
 place-items:center ;
 font-size: 20px;
 font-weight: 700;
+border-radius:50%;
 background-color: ${(props)=>props.isSelected ? "black" : "white"};
 color: ${(props)=>!props.isSelected ? "black" : "white"};
+transition: transform .4s ease-in ;
+cursor: pointer;
+&:hover{
+  transform: scale(1.1);
+  
+}
 `;
